@@ -107,13 +107,14 @@ i.fa.fa-times:hover
 {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -35%;
     opacity: 1;
     z-index: 10;
     background-color: #232a3a;
     height: 100%;
     max-height: 100%;
-    width: 100%;
+	width: 100%;
+	transition: 0.75s all;
     max-width: 35%;
     display: block;
     overflow: hidden;
@@ -121,7 +122,6 @@ i.fa.fa-times:hover
     justify-content: center;
     align-items: center;
 }
-
 
 
 /* Banner Section
@@ -140,6 +140,22 @@ i.fa.fa-times:hover
 {
 	position: relative;
 	overflow: hidden;
+	display: flex;
+	width: 33.33%;
+	transition: all 0.5s ease;
+	height: 100vh;
+}
+.bannerSection .inner-section:nth-child(1)
+{
+	background-image: url("../images/homepage-commercial.jpg"); 
+}
+.bannerSection .inner-section:nth-child(2)
+{
+	background: url(../images/homepage-industrial.jpg); 
+}
+.bannerSection .inner-section:nth-child(3)
+{
+	background: url(../images/homepage-institutional.jpg); 
 }
 .bannerSection .inner-section figure img
 {
@@ -150,24 +166,20 @@ i.fa.fa-times:hover
 	transform: scale(1.5);
 	transition: all 0.5s ease;
 }
-/*.bannerSection .inner-section figure img:hover
-{
-	cursor: pointer;
-	width: calc(80% + 20px);
-}*/
-.flex-33:hover {
-    width: calc(33.33% + 20px);
-}
 .bannerSection .inner-section .caption
 {
 	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	/*top: 60%;
+	left: 10%;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	color: #fff;
 }
 .bannerSection .inner-section .caption h3
 {
+	margin-bottom: 20px;
 	font-size: 40px;
 	position: relative;
 }
@@ -175,15 +187,21 @@ i.fa.fa-times:hover
 {
 	content: "";
 	position: absolute;
-	top: 0%;
+	bottom: -10px;
 	left: 0%;
-	width: 50px;
-	height: 10px;
+	width: 100%;
+	height: 3px;
 	background-color: red;
-}
+}/*
+.bannerSection .inner-section .caption .inner-caption
+{
+	width: 0%;
+	overflow: hidden;
+}*/
 .bannerSection .inner-section .caption .inner-caption p
 {
-	width: 100%;
+	width: 0%;
+	overflow: hidden;
 	font-size: 20px;
 }
 
