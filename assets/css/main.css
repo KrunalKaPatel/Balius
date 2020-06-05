@@ -169,8 +169,8 @@ i.fa.fa-times:hover
 .bannerSection .inner-section .caption
 {
 	position: absolute;
-	/*top: 60%;
-	left: 10%;*/
+	top: 50%;
+	/*left: 10%;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -192,16 +192,20 @@ i.fa.fa-times:hover
 	width: 100%;
 	height: 3px;
 	background-color: red;
-}/*
+}
+
 .bannerSection .inner-section .caption .inner-caption
 {
-	width: 0%;
+	/* width: 0%; */
+	/* overflow: hidden; */
+	visibility: hidden;
 	overflow: hidden;
-}*/
+}
 .bannerSection .inner-section .caption .inner-caption p
 {
-	width: 0%;
+	/* width: 100%; */
 	overflow: hidden;
+	/* visibility: hidden; */
 	font-size: 20px;
 }
 
