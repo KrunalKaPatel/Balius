@@ -23,12 +23,12 @@ $(document).ready(function(){
     	$(".inner-section").css("width", "24.995%");
     	$(".inner-section").eq(index).css("width", "50%");
 
-    	$(".inner-section").eq(index).find(".inner-caption").css("visibilty","visisble");
+    	$(".inner-section").eq(index).find(".inner-caption").css("visibility","visible");
     });
 
     $(".inner-section").mouseout(function(){
         $(".inner-section").css("width", "33.33%");
-    	$(".inner-section").find(".inner-caption").css("visibiltiy", "hidden");
+    	$(".inner-section").find(".inner-caption").css("visibility", "hidden");
     });
 
 });

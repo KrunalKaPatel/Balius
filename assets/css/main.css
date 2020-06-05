@@ -198,11 +198,12 @@ i.fa.fa-times:hover
 {
 	/* width: 0%; */
 	/* overflow: hidden; */
+	visibility: hidden;
 	overflow: hidden;
 }
 .bannerSection .inner-section .caption .inner-caption p
 {
-	width: 100%;
+	/* width: 100%; */
 	overflow: hidden;
 	/* visibility: hidden; */
 	font-size: 20px;
