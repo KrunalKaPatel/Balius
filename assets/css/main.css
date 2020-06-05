@@ -1,0 +1,213 @@
+/* font-face start
+----------------------------*/
+@font-face
+{ 
+	font-family: 'Quicksand';
+	src:url('../fonts/Quicksand-Bold.eot') format('eot'), 
+		url('../fonts/Quicksand-Bold.svg') format('svg'), 	
+		url('../fonts/Quicksand-Bold.ttf') format('ttf'), 
+		url('../fonts/Quicksand-Bold.woff') format('woff'), 
+		url('../fonts/Quicksand-Bold.woff2') format('woff2');
+		font-weight: 700;
+}
+
+
+
+/* reset css start
+----------------------------*/
+*{ box-sizing:border-box;}
+body{ padding:0; margin:0; scroll-behavior:smooth;}
+h1,h2,h3,h4,h5,h6{ margin:0; padding:0}
+figure{ padding:0; margin:0;}
+img{margin: 0; padding: 0;max-width: 100%;}
+ul,li{ text-decoration:none; display:inline; margin:0; padding:0;}
+a{ text-decoration:none; text-decoration-line: none;display: inline-block; outline: none;}
+a:hover{text-decoration:none; text-decoration-line: none; outline: none;}
+p{ margin:0; padding:0}
+
+
+/* default css
+------------------------------*/
+
+.flex-33
+{
+	display: flex;
+	flex: 0 0 33.33%;
+}
+
+
+/* Header Section 
+------------------------------*/
+.pageHeader
+{
+	background-color: #232a3a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    display: flex;
+    flex: 0 0 13%;
+    max-width: 13%;
+    padding: 20px 0px;
+}
+.pageHeader .logo figure img
+{
+	width: 100%;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+i.fa.fa-bars:hover
+{
+	color: #76a8e3;
+}
+i.fa.fa-times
+{
+	position: fixed;
+    z-index: 11;
+    left: 6.5%;
+    color: #76a8e3;
+}
+i.fa.fa-times:hover
+{
+	color: #fff;
+}
+.pageHeader i
+{
+	position: absolute;
+	cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.pageHeader .nav-menu ul
+{
+	display: block;
+}
+.pageHeader .nav-menu ul li
+{
+	display: block;
+}
+.pageHeader .nav-menu ul li a
+{
+	color: #fff;
+	font-size: 20px;
+	padding: 20px 10px;
+}
+.pageHeader .nav-menu ul li a:hover
+{
+    color: #76a8e3;
+}
+.pageHeader .nav-menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 10;
+    background-color: #232a3a;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 35%;
+    display: block;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Banner Section
+------------------------------*/
+
+.bannerSection
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex: 0 0 87%;
+	max-width: 87%;
+	margin: 0 auto;
+	margin-right: 0;
+}
+.bannerSection .inner-section
+{
+	position: relative;
+	overflow: hidden;
+}
+.bannerSection .inner-section figure img
+{
+	width: 100%;
+	max-width: 100%;
+	height: 100vh;
+	display: flex;
+	transform: scale(1.5);
+	transition: all 0.5s ease;
+}
+/*.bannerSection .inner-section figure img:hover
+{
+	cursor: pointer;
+	width: calc(80% + 20px);
+}*/
+.flex-33:hover {
+    width: calc(33.33% + 20px);
+}
+.bannerSection .inner-section .caption
+{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+}
+.bannerSection .inner-section .caption h3
+{
+	font-size: 40px;
+	position: relative;
+}
+.bannerSection .inner-section .caption h3:after
+{
+	content: "";
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 50px;
+	height: 10px;
+	background-color: red;
+}
+.bannerSection .inner-section .caption .inner-caption p
+{
+	width: 100%;
+	font-size: 20px;
+}
+
+
+/* Footer Section
+------------------------------*/
+.pageFooter
+{
+	background-color: #232a3a;
+	width: 100%;
+	max-width: 87%;	
+	padding: 10px 20px;
+	margin: 0 auto;
+	margin-right: 0;
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+}
+.pageFooter .rightFooter ul,li
+{
+	display: inline;
+}
+.rightFooter ul li a
+{
+	color: #fff;
+	padding: 0px 20px;
+}
