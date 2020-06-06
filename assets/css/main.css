@@ -336,3 +336,9 @@ i.fa.fa-times:hover
 		max-width: 100%;
 	}
 }
+
+.pull-down-height{
+	z-index: 15;
+	position: absolute;
+	top: 50%;
+}
