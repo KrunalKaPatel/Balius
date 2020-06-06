@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
-    // navMenuChange()
-    $(".nav-menu").css("left" , "-100%")
+    $(".nav-menu").css("left" , "-100%");
 
 	/* Menu Slide 
 	------------------------------*/
@@ -40,11 +39,4 @@ $(document).ready(function(){
     	$(".inner-section").find(".inner-caption").css("visibility", "hidden");
     });
     
-    // function navMenuChange(){
-    //     let width = $(window).width();
-    //     if(width <= 768){
-    //     }
-    // }
-
-
 });

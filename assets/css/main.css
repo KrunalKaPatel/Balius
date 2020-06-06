@@ -316,4 +316,23 @@ i.fa.fa-times:hover
 	{
 		max-width: 100%;
 	}
+
+	.bannerSection
+	{
+		flex-direction: column;
+		width: 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.bannerSection .inner-section
+	{
+		width: 100%;
+		height: 50vh;
+	}
+
+	.pageFooter
+	{
+		width: 100%;
+		max-width: 100%;
+	}
 }
