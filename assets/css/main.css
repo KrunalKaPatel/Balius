@@ -135,27 +135,56 @@ i.fa.fa-times:hover
 	max-width: 87%;
 	margin: 0 auto;
 	margin-right: 0;
+	overflow: hidden;
 }
 .bannerSection .inner-section
 {
-	position: relative;
+	/*position: relative;
 	overflow: hidden;
 	display: flex;
 	width: 33.33%;
 	transition: all 0.5s ease;
+	height: 100vh;*/
 	height: 100vh;
+    width: 33.333%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
 }
-.bannerSection .inner-section:nth-child(1)
-{
-	background-image: url("../images/homepage-commercial.jpg"); 
+.poligon {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: -50px;
+    transform: skewX(-5deg);
+    overflow: hidden;
+    transform-origin: inherit;
+    visibility: hidden;
+    transition: all 0.5s ease;
 }
-.bannerSection .inner-section:nth-child(2)
+.poligon1
 {
-	background: url(../images/homepage-industrial.jpg); 
+	overflow: hidden;
+    width: 100%;
+    height: 100%;
+	transform: skewX(10deg);
+	transition: all 0.5s ease;
 }
-.bannerSection .inner-section:nth-child(3)
+.poligon2
 {
-	background: url(../images/homepage-institutional.jpg); 
+	width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    visibility: visible;
+	transform: rotate(0deg);
+	transition: all 0.5s ease;
+}
+.poligon2 img
+{
+	max-width: initial;
 }
 .bannerSection .inner-section figure img
 {
@@ -173,9 +202,11 @@ i.fa.fa-times:hover
 	/*left: 10%;*/
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	flex-direction: column;
 	color: #fff;
+	width: 100%;
+	padding-left: 50px;
 }
 .bannerSection .inner-section .caption h3
 {
@@ -191,7 +222,7 @@ i.fa.fa-times:hover
 	left: 0%;
 	width: 100%;
 	height: 3px;
-	background-color: red;
+	background-color: #7aadee;
 }
 
 .bannerSection .inner-section .caption .inner-caption
@@ -200,13 +231,22 @@ i.fa.fa-times:hover
 	/* overflow: hidden; */
 	visibility: hidden;
 	overflow: hidden;
+	width: 100%;
 }
 .bannerSection .inner-section .caption .inner-caption p
 {
-	/* width: 100%; */
-	overflow: hidden;
+	width: 400px; 
 	/* visibility: hidden; */
 	font-size: 20px;
+}
+.bannerSection .inner-section .caption .inner-caption p a
+{
+	margin-top: 10px;
+	color: #fff;
+}
+.bannerSection .inner-section .caption .inner-caption p a:hover
+{
+	color: #76a8e3;
 }
 
 
@@ -232,4 +272,48 @@ i.fa.fa-times:hover
 {
 	color: #fff;
 	padding: 0px 20px;
+}
+.rightFooter ul li a:hover
+{
+	color: #76a8e3;
+}
+
+
+/* Media Queries 
+------------------------------*/
+@media(max-width: 991px)
+{
+	.bannerSection .inner-section .caption h3
+	{
+		font-size: 30px;
+	}
+	.bannerSection .inner-section .caption .inner-caption p
+	{
+		width: 300px;
+	}
+}
+@media(max-width: 768px)
+{
+	.pageHeader
+	{
+		height: 20%;
+		width: 100%;
+	    max-width: 100%;
+	}
+	.pageHeader .logo figure img 
+	{
+	    width: 100%;
+	    max-width: 40%;
+	    margin-left: 30px;
+	}
+	.pageHeader i
+	{
+		top: 50%;
+		left: 85%;
+	}
+
+	.pageHeader .nav-menu
+	{
+		max-width: 100%;
+	}
 }
