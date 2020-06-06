@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    // navMenuChange()
+    $(".nav-menu").css("left" , "-100%")
+
 	/* Menu Slide 
 	------------------------------*/
 
@@ -11,7 +14,13 @@ $(document).ready(function(){
     });
 
     jQuery(".fa-times" ).click(function() {
-        $(".nav-menu").css("left" , "-35%")
+        let width = $(window).width();
+        if(width <= 768){
+            $(".nav-menu").css("left" , "-100%")
+        }
+        else{
+            $(".nav-menu").css("left" , "-35%")
+        }
             $( ".fa-times" ).hide();
             $( ".fa-bars" ).show();
           });
@@ -30,5 +39,12 @@ $(document).ready(function(){
         $(".inner-section").css("width", "33.33%");
     	$(".inner-section").find(".inner-caption").css("visibility", "hidden");
     });
+    
+    // function navMenuChange(){
+    //     let width = $(window).width();
+    //     if(width <= 768){
+    //     }
+    // }
+
 
 });
