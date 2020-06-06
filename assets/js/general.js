@@ -2,6 +2,18 @@ $(document).ready(function(){
 
     $(".nav-menu").css("left" , "-100%");
 
+    $(window).resize(function(){
+        let width = $(window).width()
+        if(width <= 768 ){
+            $(".inner-section").css("height", "50vh");
+            $(".inner-section").css("width", "100%");
+        }
+        else{
+            $(".inner-section").css("height", "100vh");
+            $(".inner-section").css("width", "33.33%");
+        }
+    })
+
 	/* Menu Slide 
 	------------------------------*/
 
@@ -25,18 +37,35 @@ $(document).ready(function(){
           });
 
     $(".inner-section").mouseover(function(){
-    	let index = $(this).index();
-    	var x = $(".inner-section");
-    	console.log(index);
-    	$(".inner-section").css("width", "24.995%");
-    	$(".inner-section").eq(index).css("width", "50%");
-
-    	$(".inner-section").eq(index).find(".inner-caption").css("visibility","visible");
+        let width = $(window).width();
+        if(width <= 768){
+            let index = $(this).index();
+            $(".inner-section").css("width", "100%");
+            $(".inner-section").eq(index).css("height", "75vh");
+            $(".inner-section").css("height", "50vh");
+    	    $(".inner-section").eq(index).find(".inner-caption").css("visibility","visible");
+        }
+        else{
+            let index = $(this).index();
+            let x = $(".inner-section");
+            // console.log(index);
+            $(".inner-section").css("width", "24.995%");
+            $(".inner-section").eq(index).css("width", "50%");
+        	$(".inner-section").eq(index).find(".inner-caption").css("visibility","visible");
+        }
     });
 
     $(".inner-section").mouseout(function(){
-        $(".inner-section").css("width", "33.33%");
-    	$(".inner-section").find(".inner-caption").css("visibility", "hidden");
+        let width = $(window).width();
+        if(width <= 768){
+            $(".inner-section").css("height", "50vh");
+            $(".inner-section").find(".inner-caption").css("visibility", "hidden");
+        }
+        else{
+            $(".inner-section").css("width", "33.33%");
+            $(".inner-section").find(".inner-caption").css("visibility", "hidden");
+        }
+
     });
     
 });
